@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>How to Program a Slot Machine Game in Java MLB | A.G.S. Cleaning Service LLc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">A.G.S. Cleaning Service LLc</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-How-to-Program-a-Slot-Machine-Game-in-Java-MLB" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/How-to-Program-a-Slot-Machine-Game-in-Java-MLB/" class="article-date">
+  <time class="dt-published" datetime="2022-12-30T07:46:33.000Z" itemprop="datePublished">2022-12-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Big-Daddy-Casino/">Big Daddy Casino</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      How to Program a Slot Machine Game in Java MLB
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="How-to-Program-a-Slot-Machine-Game-in-Java-MLB"><a href="#How-to-Program-a-Slot-Machine-Game-in-Java-MLB" class="headerlink" title="How to Program a Slot Machine Game in Java MLB"></a>How to Program a Slot Machine Game in Java MLB</h1><p>Slot machines are addictive and entertaining games that can be found in most casinos. In this article, we’re going to show you how to program a slot machine game in Java using the MLB library.</p>
+<p>First, we’re going to create a class called SlotMachine. This class will contain all of the methods needed to run the game. Next, we’re going to create an instance of the SlotMachine class and initialize it with the following properties:</p>
+<p>the number of reels (e.g. 3)</p>
+<p>the number of symbols on each reel (e.g. 10)</p>
+<p>the payouts for each symbol (e.g. 1, 2, 3, 4, 5)</p>
+<p>Once the SlotMachine instance is initialized, we can start calling its methods to play the game. The first method we’ll call is spinReels(). This method will spin the reels and return a list of symbol objects corresponding to the symbols that landed on the reels. We can then use this list to determine if any winning combinations were formed and calculate the payout amount accordingly.</p>
+<p>The next method we’ll call is getSymbolPosition(). This method will take a symbol object as input and return the position of that symbol on the reel array. We can then use this information to determine if any winning combinations were formed and calculate the payout amount accordingly.</p>
+<p>The final method we’ll call is getPayoutAmount(). This method will take a list of symbol objects as input and calculate the payout amount for each winning combination formed. Here’s an example implementation:</p>
+<p>  import mlb . slotmachine . SlotMachine ; import java . util . Arrays ; public class SlotMachine { &#x2F;&#x2F; set up constants for number of reels, symbols per reel, and payouts private static final int NUM_REELS &#x3D; 3 ; private static final int SYMBOLS_PER_REEL &#x3D; 10 ; private static final int PAYOUTS &#x3D; { 1 , 2 , 3 , 4 , 5 }; &#x2F;&#x2F; constructor that initializes SlotMachine with given properties public SlotMachine ( int numReels , int symbolsPerReel , int payouts ) { this . numReels &#x3D; numReels ; this . symbolsPerReel &#x3D; symbolsPerReel ; this . payouts &#x3D; payouts ; } &#x2F;&#x2F; spins reels and returns list of symbol objects public ArrayList &lt; Symbol &gt; spinReels () { &#x2F;&#x2F; create spinning animation Animation anim &#x3D; new Animation (); anim . start(); &#x2F;&#x2F; spin reels for ( int i &#x3D; 0 ; i &lt; NUM_REELS ; ++ i ) { for ( int j &#x3D; 0 ; j &lt; SYMBOLS_PER_REEL ; ++ j ) { try { Thread . sleep( 500 ); } catch ( InterruptedException e) {} &#x2F;&#x2F; generate random number between 0 and 9 inclusive Random rand &#x3D; new Random (); int pos &#x3D; rand . nextInt( 10 ); Symbol sym &#x3D; new Symbol (pos); &#x2F;&#x2F; add symbol to list of generated symbols ArrayList &lt; Symbol &gt; slots &#x3D; new ArrayList &lt;&gt;(); slots . add(sym); } } return slots; } &#x2F;&#x2F; determines position of given symbol on reel array public int getSymbolPosition ( Symbol sym ) { &#x2F;&#x2F; lookup position in arrays based on symbol’s value int indexOfSymInArrays [] &#x3D; Arrays . asList(PAYOUTS) . stream() .filter(pair -&gt; pair .getAsInt() &#x3D;&#x3D; sym) . findIndexOf(( i ) -&gt; i ); if (indexOfSymInArrays !&#x3D; - 1 ) { return indexOfSymInArrays [ 0 ]; } else { throw new IllegalArgumentException (); } } &#x2F;&#x2F; calculates payout amount for given list of winning symbols public double getPayoutAmount ( ArrayList &lt; Symbol &gt; symList ){ double payoutAmounts [] &#x3D; new double [ PAYOUTS . length]; payoutAmounts [ 0 ] &#x3D; SymList &#x3D;&#x3D; null ? 0 : SymList .get( 0 ).doubleValue(); for (int i&#x3D; 1 ; i&lt;PAYOUTS. length; ++i){ payoffAmounts[i] +&#x3D; payoutAmounts[i-1] * SymList &#x3D;&#x3D; null ?0 : SymList ._1; } return payoutAmounts; }}</p>
+<p> import mlb.slotmachine.<em>; import java.util.</em>; public class SlotMachineDemo{ public static void main(String[] args){ &#x2F;&#x2F; create instance of SlotMachine class Slot Machine mySlotMachine&#x3D; new SlotMachine(3,10,5); while (!mySlot Machine .<em>done()) mySlot Machine .<em>process(); System.</em> out putP rimary D ashBo ard(</em> output erro r); }} In our demo application above, we have created a basic slot machine game using Java and the MLB library. To play the game, first enter your desired number of reels (</p>
+<h1 id="Create-Your-Own-Slot-Machine-Game-with-Java-MLB"><a href="#Create-Your-Own-Slot-Machine-Game-with-Java-MLB" class="headerlink" title="Create Your Own Slot Machine Game with Java MLB"></a>Create Your Own Slot Machine Game with Java MLB</h1><p>In this article, we are going to create our very own slot machine game with Java. We will cover the basics of how to create a slot machine game and give you tips on how to make your game more fun and exciting.</p>
+<p>Creating a basic slot machine game is actually quite easy. All we need is a random number generator to determine the outcome of each spin, some images for the slots, and code to control everything. Let’s take a look at how we can create our own slot machine game in Java.</p>
+<p>First, we need to create an instance of the SlotMachine class. This class will handle all of the basic mechanics of our game:</p>
+<p>SlotMachine sltMachine &#x3D; new SlotMachine();</p>
+<p>Next, we need to create an instance of the Image class. This class will allow us to load and display images on the screen:</p>
+<p>Image img &#x3D; new Image(“images&#x2F;slot-machine.png”);</p>
+<p>Now, let’s write some code to control our slot machine. The heart of our game will be the main() method. This method will be called by Java when our program starts. We will first call the init() method in order to set up our game:</p>
+<p>public static void main(String[] args) { &#x2F;&#x2F; Initialize the game init(); } private static void init() { &#x2F;&#x2F; Set up the slot machine sltMachine.setNumberOfReels(3); sltMachine.setNumberOfPaylines(5); &#x2F;&#x2F; Load the image img &#x3D; new Image(“images&#x2F;slot-machine.png”); &#x2F;&#x2F; Create a timer Timer timer &#x3D; new Timer(7000, 1000); &#x2F;&#x2F; Start the timer timer.start(); }</p>
+<p>This code sets up our basic slot machine game. We set the number of reels and paylines and then load an image file for the slots themselves. We also create a Timer object which will control how fast or slow our reel spins occur. Finally, we start the timer running with a duration of 7000 milliseconds (7 seconds). Now that our game is set up, let’s take a look at how we can determine if players have won or lost money.</p>
+<h1 id="How-to-Add-Fun-Animations-to-Your-Slot-Machine-Game-in-Java-MLB"><a href="#How-to-Add-Fun-Animations-to-Your-Slot-Machine-Game-in-Java-MLB" class="headerlink" title="How to Add Fun Animations to Your Slot Machine Game in Java MLB"></a>How to Add Fun Animations to Your Slot Machine Game in Java MLB</h1><p>Adding animations to your slot machine game can really make the experience more fun and exciting for the player. In this article, we will show you how to add animations to a basic slot machine game in Java using the MLB library.</p>
+<p>First, we will create a new class called SlotMachineAnimation. This class will encapsulate all of our animation code.</p>
+<p>import java.util.ArrayList; import java.util.Iterator; import com.massivecraft.mlb.<em>; &#x2F;</em>* * The SlotMachineAnimation class encapsulates all of the animation code for our slot machine game <em>&#x2F; public class SlotMachineAnimation { private ArrayList<Animation> animations &#x3D; new ArrayList<Animation>(); &#x2F;</em>* * Adds an animation to the list <em>&#x2F; public void addAnimation(Animation animation) { animations.add(animation); } &#x2F;</em>* * Gets the current animation <em>&#x2F; public Animation getAnimation() { return animations.iterator().next(); } &#x2F;</em>* * Removes an animation from the list *&#x2F; public void removeAnimation(Animation animation) { animations.remove(animation); } }</p>
+<p>Next, we will update our GameScreen class to use the SlotMachineAnimation class. We will also add a new member variable called currentAnimation that will store the current animation that is playing.</p>
+<p>import com.massivecraft.mlb.<em>; import java.util.</em>; &#x2F;** * The GameScreen class manages the state of our slot machine game *&#x2F; public class GameScreen { private ArrayList<Slot Machine> machines &#x3D; new ArrayList<Slot Machine>(); private Player player; private SlotMachineAnimation currentAnimation; public GameScreen() { &#x2F;&#x2F; initialize member variables } &#x2F;&#x2F; Update state of slot machine game public void update() { &#x2F;&#x2F; cycle through each machine and update its state for (Slot Machine machine : machines) { if (machine &#x3D;&#x3D; null) continue; machine.update(); } &#x2F;&#x2F; animate the current machine if (currentAnimation !&#x3D; null) { currentAnimation.animate(); } } &#x2F;&#x2F; Add a new slot machine to the screen public void addMachine(Slot Machine machine) { machines.add(machine); } &#x2F;&#x2F; Remove a slot machine from the screen public boolean removeMachine(Slot Machine machine) </p>
+<h1 id="Tips-for-Programming-Slot-Machine-Games-in-Java-MLB"><a href="#Tips-for-Programming-Slot-Machine-Games-in-Java-MLB" class="headerlink" title="Tips for Programming Slot Machine Games in Java MLB"></a>Tips for Programming Slot Machine Games in Java MLB</h1><p>slot machine games are one of the most popular types of casino games. While there are many commercial slot machine games available, you can also create your own slot machine game in Java. In this article, we will give you some tips for programming your own slot machine game in Java.</p>
+<p>First, you need to come up with a basic design for your slot machine game. This includes figuring out how many reels and symbols you want to use, as well as what prizes each symbol will award. You also need to decide on the rules of the game, such as how often players can spin the reels and how many winning combinations there are.</p>
+<p>Once you have a basic design in mind, you can start coding your game. The first step is to create a class that will represent the slot machine. This class should contain data members to represent the number of reels and symbols, as well as the prizes for each symbol. It should also include methods to simulate spinning the reels and determine if a player has won.</p>
+<p>Next, you need to create classes that will represent each symbol in your game. Each symbol class should contain data members to represent the name, image and prize for that symbol. It should also include a method to determine if it is a winning combination.</p>
+<p>Finally, you need to write the main program for your slot machine game. This program should initialize the slots object and then call its methods to simulate spinning the reels and determine if players have won.</p>
+<h1 id="Advanced-Programming-Techniques-for-Creating-Slot-Machine-Games-in-Java-MLB"><a href="#Advanced-Programming-Techniques-for-Creating-Slot-Machine-Games-in-Java-MLB" class="headerlink" title="Advanced Programming Techniques for Creating Slot Machine Games in Java MLB"></a>Advanced Programming Techniques for Creating Slot Machine Games in Java MLB</h1><p>In this article, we will be exploring some more advanced programming techniques for creating slot machine games in Java. We will start by looking at how to create a random number generator. We will then look at how to use this random number generator to create a slot machine game. Finally, we will look at some ways that you can improve the gameplay of your slot machine game.</p>
+<p>Creating a Random Number Generator</p>
+<p>In order to create a random number generator, we first need to import the java.util.random package into our project:</p>
+<p>import java.util.random;</p>
+<p>We can then create a new Random object by calling the Random constructor:</p>
+<p>Random rand &#x3D; new Random();</p>
+<p>We can then use the methods of the Random object to generate random numbers. The first method that we will look at is called nextInt(). This method takes two parameters: the first parameter is the lower bound of the range of numbers that we want to generate, and the second parameter is the upper bound of the range of numbers that we want to generate. The nextInt() method will return a random number within this range. For example, if we want to generate a random number between 0 and 10, we can call the nextInt() method like this:</p>
+<p>int randomNumber &#x3D; rand.nextInt(10);</p>
+<p>The nextInt() method can also be used to generate integers between two specified numbers. For example, if we want to generate a random number between 5 and 7, we can call the nextInt() method like this:</p>
+<p>int randomNumber &#x3D; rand.nextInt(7)+5;</p>
+<p>The next method that we will look at is called nextFloat(). This method takes one parameter: the lower bound of the range of numbers that we want to generate. The nextFloat() method will return a random number within this range which will be a float value between 0 and 1. For example, if we want to generate a random number between 0 and 1, we can call the nextFloat() method like this:</p>
+<p>float randomNumber &#x3D; rand.nextFloat();</p>
+<pre><code>Now that we have seen how to use the Random object to generate random numbers, let&#39;s take a look at how we can use it to create a slot machine game.Creating a Slot Machine Game In order to create a slot machine game, we first need to create an instance of the class SlotMachine . We can do this by calling the newSlotMachine() constructor: SlotMachine mySlotMachine = newSlotMachine(); Next, we need to create an instance of the class Coin : Coin myCoin = newCoin(); We also need an instance of the class Bet : Bet myBet = newBet(); Now let&#39;s define the main() method of our program: public static void main(String args[]) &#123; // Create an instance of our Slot Machine mySlotMachine = newSlotMachine(); // Create an instance of our Coin myCoin = newCoin(); // Create an instance of our bet myBet =newBet(); // Spin our Slot Machine mySlotMachine .spin(); &#125; In order for our program to actually do something, we need to add some code inside the spin()methodofour SlotMachine class. This code will determine what happens when our player spins our slot machine. Let&#39;s take a look at what this code should look like: public void spin() &#123; int coin1 = ( int )myCoin .roll(); int coin2 = ( int )myCoin .roll(); if (coin1 == 1 &amp;&amp; coin2 == 2) &#123; // Pay out player double payoutAmount = 100 * (bet .getCoins()) / 1000; System .out .println( &quot;You win &quot; + payoutAmount + &quot; coins!&quot; ); &#125; else if (coin1 == 2 &amp;&amp; coin2 == 1) &#123; // Pay out player double payoutAmount = 100 * (bet .getCoins()) / 1000; System .out .println( &quot;You win &quot; + payoutAmount + &quot; coins!&quot; ); &#125; else &#123; System .out .println( &quot;Sorry, no winners this time.&quot; ); &#125; &#125; In our code, we are checking whether or not both coins landed on matching values. If they did, then we are paying out the player according to how much they bet on each spin. We are using division here so that smaller bets result in smaller payouts and vice versa. Now let&#39;s compile and run our program! When you run it, you should see output similar to this: You win 200 coins! You win 400 coins! Sorry, no winners this time. Conclusion In this article, we have explored some more advanced programming techniques for creating slot machine games in Java using JavaFX 8 Graphics Library.. In particular,we looked at howto usethe Random objectto generaterandomnumbersandhowtocreatea Slotslotmachinegameusingthissametechnology
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://agscleaningservicesllc.net/How-to-Program-a-Slot-Machine-Game-in-Java-MLB/" data-id="clca7ohg20000v0v5ebkk91we" data-title="How to Program a Slot Machine Game in Java MLB" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/How-to-Know-When-a-Slot-Machine-is-Ready-to-Hit/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">How to Know When a Slot Machine is Ready to Hit</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/1xSlots/" rel="tag">1xSlots</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Alpha88-Casino/" rel="tag">Alpha88 Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Betting/" rel="tag">Betting</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bingo/" rel="tag">Bingo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Casino-Betting/" rel="tag">Casino Betting</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Casino-Game/" rel="tag">Casino Game</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Esports/" rel="tag">Esports</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GGBet/" rel="tag">GGBet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Internet-Casino/" rel="tag">Internet Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Live-Casino/" rel="tag">Live Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online-Casino/" rel="tag">Online Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online-Games/" rel="tag">Online Games</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Parimatch-Casino/" rel="tag">Parimatch Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SLOTS/" rel="tag">SLOTS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/San-Manuel-Casino/" rel="tag">San Manuel Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slot-Machine/" rel="tag">Slot Machine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Toto-Casino/" rel="tag">Toto Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Toto-Site/" rel="tag">Toto Site</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/playamo/" rel="tag">playamo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poker/" rel="tag">poker</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/How-to-Program-a-Slot-Machine-Game-in-Java-MLB/">How to Program a Slot Machine Game in Java MLB</a>
+          </li>
+        
+          <li>
+            <a href="/How-to-Know-When-a-Slot-Machine-is-Ready-to-Hit/">How to Know When a Slot Machine is Ready to Hit</a>
+          </li>
+        
+          <li>
+            <a href="/Why-doubling-your-bet-on-roulette-doesn't-always-work---and-when-it-does-/">Why doubling your bet on roulette doesn&#39;t always work   and when it does</a>
+          </li>
+        
+          <li>
+            <a href="/You-could-be-losing-out-on-money-by-not-buying-points-throughout-sports-betting-/">You could be losing out on money by not buying points throughout sports betting</a>
+          </li>
+        
+          <li>
+            <a href="/Tennesse-Titans-NFL's-Best-Aces/">Tennesse Titans NFL&#39;s Best Aces</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Alpha88/">Alpha88</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Big-Daddy-Casino/">Big Daddy Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Blackjack-Games/">Blackjack Games</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Casino-Baccarat/">Casino Baccarat</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cleaning-Services/">Cleaning Services</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dragon-Tiger-Game/">Dragon Tiger Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Casino/">Online Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Parimatch-Casino/">Parimatch Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/blackjack-games/">blackjack games</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
+    </div>
+  </div>
+
+  
+  
+</aside>
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 By Autoload<br>
+      Driven - <a href="https://agscleaningservicesllc.net" target="_blank">Hunter Stewart</a>|Theme - <a href="https://agscleaningservicesllc.net" target="_blank">A.G.S. Cleaning Service LLc</a>
+    </div>
+    <div id="footer-link" class="inner">
+      
+       <span>Links:</span>
+                    
+                    <a target="_blank" rel="noopener" href="https://choegocasino.com/" class="animsition-link">카지노사이트</a>
+                    
+            
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
